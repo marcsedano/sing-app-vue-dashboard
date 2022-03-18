@@ -232,11 +232,11 @@ i.fi {
 .flaticon-equal::before { content: '\f15a'; }
 
 .router-link-active .flaticon-equal-1 {
-  background-image: url('../../src/assets/icons/layout.svg');
+  background-image: url('../../src/assets/icons/licences-blue.svg');
 }
 
 .flaticon-equal-1 {
-  background-image: url('../../src/assets/icons/layout-blue.svg');
+  background-image: url('../../src/assets/icons/licences-white.svg');
 }
 
 .router-link-active .flaticon-bell {
@@ -345,12 +345,20 @@ i.fi {
 
 .flaticon-hold::before { content: '\f18c'; }
 
+.router-link-active .flaticon-dots {
+  background-image: url('../../src/assets/icons/dots-blue.svg');
+}
+
+.flaticon-dots {
+  background-image: url('../../src/assets/icons/dots-white.svg');
+}
+
 .router-link-active .flaticon-home {
-  background-image: url('../../src/assets/icons/home.svg');
+  background-image: url('../../src/assets/icons/layout-dashboard-blue.svg');
 }
 
 .flaticon-home {
-  background-image: url('../../src/assets/icons/home-blue.svg');
+  background-image: url('../../src/assets/icons/layout-dashboard-white.svg');
 }
 
 .flaticon-menu {
@@ -414,11 +422,11 @@ i.fi {
 .flaticon-link::before { content: '\f1a7'; }
 
 .router-link-active .flaticon-list {
-  background-image: url('../../src/assets/icons/text.svg');
+  background-image: url('../../src/assets/icons/target-blue.svg');
 }
 
 .flaticon-list {
-  background-image: url('../../src/assets/icons/text-blue.svg');
+  background-image: url('../../src/assets/icons/target-white.svg');
 }
 
 .flaticon-list-1::before { content: '\f1a9'; }
