@@ -105,8 +105,8 @@ a.router-link-active {
   font-weight: $font-weight-semi-bold;
 
   .icon {
-    border-radius: 50%;
-    background-color: var(--sidebar-item-active-bg);
+    // border-radius: 50%;
+    // background-color: var(--sidebar-item-active-bg);
 
     i {
       color: var(--sidebar-icon-active);
