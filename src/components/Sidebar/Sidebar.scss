@@ -1,10 +1,11 @@
 @import '../../styles/app';
 .sidebar {
   position: absolute;
+  height: 100%;
   top: 0;
   left: 0;
   width: $sidebar-width-open;
-  background-color: var(--sidebar-bg-color);
+  background-color: $esed-primary-color;
   color: var(--sidebar-color);
   transition: $transition-base;
 }
@@ -100,6 +101,9 @@
 
   &.first {
     margin-top: 46px;
+  }
+  &.last {
+    margin-top: 50%;
   }
 
   @media (min-width: breakpoint-min(lg)) {
