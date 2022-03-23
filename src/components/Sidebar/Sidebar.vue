@@ -22,9 +22,9 @@
         <NavLink
             :activeItem="activeItem"
             header="Targets"
-            link="/app/typography"
+            link="/app/targets"
             iconName="flaticon-list"
-            index="typography"
+            index="targets"
             isHeader
         />
         <NavLink
