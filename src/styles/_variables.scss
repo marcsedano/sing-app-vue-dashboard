@@ -25,6 +25,11 @@ $font-family-base: 'Montserrat', sans-serif;
 // Color system
 //
 
+// ESEDSL
+$esed-primary-color: #0F2B3A;
+$esed-secondary-color: #6AC0D6;
+$esed-white: #fff;
+
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #EAF0F6 !default;
@@ -52,7 +57,7 @@ $default: #E9ECEF !default;
 $inverse: #0D2B47 !default;
 
 $theme-colors: (
-  primary: $blue,
+  primary: $esed-secondary-color,
   secondary: $gray-600,
   success: $teal,
   info: $cyan,
@@ -159,7 +164,8 @@ $nav-tabs-active-link-hover-color: $gray-700 !default;
 
 //== Forms
 //
-$input-focus-border-color: #4d90fe !default; //webkit focus color
+// $input-focus-border-color: #4d90fe !default; //webkit focus color
+$input-focus-border-color: $esed-secondary-color !default; //webkit focus color
 $input-color: $text-color !default;
 
 //*  Popover  */
@@ -222,8 +228,3 @@ $padding-small-horizontal:  0.75rem !default;
 // -------------------------
 
 $screen-lg-height: 670px !default;
-
-// SecCheck
-// -------------------------
-$esed-primary-color: #0F2B3A;
-$esed-secondary-color: #6AC0D6;

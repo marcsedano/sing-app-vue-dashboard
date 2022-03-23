@@ -46,3 +46,22 @@ ol {
   padding-left: 0;
 }
 
+.btn-primary {
+  color: $esed-white !important;
+}
+
+.btn-secondary {
+  background-color: $esed-secondary-color !important;
+  border-color: $esed-secondary-color !important;
+  color: $esed-white !important;
+}
+.btn-secondary:hover{
+  background-color: $esed-white !important;
+  color: $esed-secondary-color !important;
+}
+.btn-secondary:active,
+.btn-secondary:visited,
+.btn-secondary:focus {
+  background-color: $esed-white !important;
+  color: $esed-secondary-color !important;
+}
