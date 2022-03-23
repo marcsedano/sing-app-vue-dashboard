@@ -7,6 +7,9 @@ import ErrorPage from '@/pages/Error/Error';
 // Core
 import TypographyPage from '@/pages/Typography/Typography';
 
+// Targets
+import TargetsPage from '@/pages/Targets/Targets';
+import NewTarget from '@/pages/Targets/NewTarget';
 // Tables
 import TablesBasicPage from '@/pages/Tables/Basic';
 
@@ -53,6 +56,17 @@ export default new Router({
           name: 'TypographyPage',
           component: TypographyPage,
         },
+        {
+          path: 'targets',
+          name: 'TargetsPage',
+          component: TargetsPage,
+        },
+        {
+          path: 'targets/newtarget',
+          name: 'NewTarget',
+          component: NewTarget,
+        },
+        {
         {
           path: 'components/icons',
           name: 'IconsPage',
