@@ -30,9 +30,9 @@
         <NavLink
             :activeItem="activeItem"
             header="Licences"
-            link="/app/tables"
+            link="/app/licences"
             iconName="flaticon-equal-1"
-            index="tables"
+            index="licences"
             isHeader
         />
       </ul>
