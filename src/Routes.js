@@ -10,6 +10,13 @@ import TypographyPage from '@/pages/Typography/Typography';
 // Targets
 import TargetsPage from '@/pages/Targets/Targets';
 import NewTarget from '@/pages/Targets/NewTarget';
+
+// Licences
+import LicencesPage from '@/pages/Licences/Licences';
+
+// Licences Payment
+import LicencesPaymentPage from '@/pages/Licences/Payment/LicencesPayment';
+
 // Tables
 import TablesBasicPage from '@/pages/Tables/Basic';
 
@@ -67,6 +74,15 @@ export default new Router({
           component: NewTarget,
         },
         {
+          path: 'licences',
+          name: 'LicencesPage',
+          component: LicencesPage,
+        },
+        {
+          path: 'licences/payment',
+          name: 'LicencesPaymentPage',
+          component: LicencesPaymentPage,
+        },
         {
           path: 'components/icons',
           name: 'IconsPage',
