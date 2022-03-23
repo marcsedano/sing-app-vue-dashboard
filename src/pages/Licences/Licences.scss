@@ -1,0 +1,15 @@
+@import '../../styles/app';
+
+.category > img{
+  width: 10%;
+  opacity: 0.5;
+
+  &.first {
+    transform: rotate(-23.17deg);
+    margin-top: 4%;
+  }
+  &.last {
+    transform: rotate(23.17deg);
+    margin-top: 4%;
+  }
+}
