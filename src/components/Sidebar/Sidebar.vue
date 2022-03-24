@@ -43,9 +43,9 @@
         <NavLink
             :activeItem="activeItem"
             header="Settings"
-            link="/app/dashboard"
+            link="/app/settings"
             iconName="flaticon-dots"
-            index="dashboard"
+            index="settings"
             isHeader
         />
       </ul>
