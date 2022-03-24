@@ -16,7 +16,7 @@
       <form>
         <div class="row mt-4">
           <div class="form-group col-xl-3 col-md-5 col-sm-12">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="example.com">
+            <input type="text" class="form-control" placeholder="example.com">
           </div>
         </div>
         <b-button type="submit" variant="primary" class="" v-on:click="noLicences()">Add Target <i class="ml-2 fa fa-angle-right fa-lg"/></b-button>
