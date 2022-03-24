@@ -9,28 +9,6 @@
           <i class='fi flaticon-menu' />
         </a>
       </b-nav-item>
-      <b-nav-item class="d-md-down-none">
-        <a href="#" class="px-2">
-          <i class='fi flaticon-flip' />
-        </a>
-      </b-nav-item>
-      <b-nav-item class="d-md-down-none">
-        <a href="#" class="px-2">
-          <i class='fi flaticon-close' />
-        </a>
-      </b-nav-item>
-    </b-nav>
-    <b-nav>
-      <b-form class="d-sm-down-none ml-5" inline>
-        <b-form-group>
-          <b-input-group class="input-group-no-border">
-            <template v-slot:prepend>
-              <b-input-group-text><i class='fi flaticon-search-2'/></b-input-group-text>
-            </template>
-            <b-form-input id="search-input" placeholder="Search Dashboard" />
-          </b-input-group>
-        </b-form-group>
-      </b-form>
     </b-nav>
     <a class="navbarBrand d-md-none">
       <i class="fa fa-circle text-danger" />
