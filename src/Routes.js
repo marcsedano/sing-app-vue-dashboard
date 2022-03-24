@@ -9,6 +9,8 @@ import TypographyPage from '@/pages/Typography/Typography';
 
 // Targets
 import TargetsPage from '@/pages/Targets/Targets';
+
+// New Target
 import NewTarget from '@/pages/Targets/NewTarget';
 
 // Licences
@@ -16,6 +18,18 @@ import LicencesPage from '@/pages/Licences/Licences';
 
 // Licences Payment
 import LicencesPaymentPage from '@/pages/Licences/Payment/LicencesPayment';
+
+// Settings
+import SettingsPage from '@/pages/Settings/Settings';
+
+// Settings Profile
+import SettingsProfilePage from '@/pages/Settings/Profile';
+
+// Settings Password
+import SettingsPasswordPage from '@/pages/Settings/Password';
+
+// Settings Billing
+import SettingsBillingPage from '@/pages/Settings/Billing';
 
 // Tables
 import TablesBasicPage from '@/pages/Tables/Basic';
@@ -59,11 +73,6 @@ export default new Router({
           component: AnalyticsPage,
         },
         {
-          path: 'typography',
-          name: 'TypographyPage',
-          component: TypographyPage,
-        },
-        {
           path: 'targets',
           name: 'TargetsPage',
           component: TargetsPage,
@@ -82,6 +91,21 @@ export default new Router({
           path: 'licences/payment',
           name: 'LicencesPaymentPage',
           component: LicencesPaymentPage,
+        },
+        {
+          path: 'settings',
+          component: SettingsPage,
+          children: [
+            { path: '', redirect: { name: 'SettingsProfilePage' } },
+            { path: 'settings/profile', name: 'SettingsProfilePage', component: SettingsProfilePage },
+            { path: 'settings/password', name: 'SettingsPasswordPage', component: SettingsPasswordPage },
+            { path: 'settings/billing', name: 'SettingsBillingPage', component: SettingsBillingPage },
+          ]
+        },
+        {
+          path: 'typography',
+          name: 'TypographyPage',
+          component: TypographyPage,
         },
         {
           path: 'components/icons',
