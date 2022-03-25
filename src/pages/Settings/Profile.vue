@@ -16,6 +16,12 @@
                         <input type="email" class="form-control" placeholder="email@email.com">
                     </div>
                 </div>
+                <div class="row mt-4">
+                    <div class="form-group col-xl-3 col-md-5 col-sm-12">
+                        <h5> NIF </h5>
+                        <input type="text" class="form-control" placeholder="58647215Z">
+                    </div>
+                </div>
                 <b-button type="submit" variant="primary" class="mt-4">Update</b-button>
             </form>
         </Widget>
