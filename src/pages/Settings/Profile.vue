@@ -1,6 +1,7 @@
 <template>
         <Widget
             title="Your Information"
+            class="custom-div"
         >
             <form>
                 <div class="row mt-4">

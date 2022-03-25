@@ -2,9 +2,7 @@
   <div class="auth-page">
     <b-container>
       <h5 class="auth-logo">
-        <i class="fa fa-circle text-primary"></i>
-        Sing App
-        <i class="fa fa-circle text-danger"></i>
+        <img src="../../assets/esed/logo_esed.png" alt="..." style="width:250px"/>
       </h5>
       <Widget class="widget-auth mx-auto" title="<h3 class='mt-0'>Login to your Web App</h3>" customHeader>
         <p class="widget-auth-info">
@@ -40,7 +38,7 @@
       </Widget>
     </b-container>
     <footer class="auth-footer">
-      2019 &copy; Sing App Vue Admin Dashboard Template - Made by <a href="https://flatlogic.com/">Flatlogic</a>
+      2022 &copy; SecCheck App - Made by <a href="https://esedsl.com/">ESED</a>
     </footer>
   </div>
 </template>

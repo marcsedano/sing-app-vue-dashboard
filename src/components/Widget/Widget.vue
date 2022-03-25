@@ -6,7 +6,7 @@
     fullscreened: state === 'fullscreen',
     loading: fetchingData
   }" ref="widget">
-    <h5 v-if="title && typeof title === 'string' && !customHeader" class="title">{{title}}</h5>
+    <h3 v-if="title && typeof title === 'string' && !customHeader" class="title">{{title}}</h3>
     <header v-if="title && customHeader" class="title" v-html="title"></header>
     <div v-if="!customControls && mainControls"
       class="widgetControls widget-controls">

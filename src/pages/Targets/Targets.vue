@@ -1,13 +1,14 @@
 <template>
-  <div>
+  <div class="custom-div">
     <h1 class="page-title">
       Targets
     </h1>
-    <b-row>
-      <b-col>
+    <b-row class="custom-div">
+      <b-col class="custom-div">
         <Widget
-          title="<h5>Table <span class='fw-semi-bold'>Styles</span></h5>"
+          title="<h3>Table <span class='fw-semi-bold'>Styles</span></h3>"
           customHeader
+          class="custom-div"
         >
           <div class="clearfix">
             <div class="float-right">

@@ -4,7 +4,6 @@
     color: $esed-white;
     background-color: $esed-primary-color;   
     min-height: 100%;
-    border-radius: 2.45rem !important;
 }
 
 .licence-payment > .row > .non-active > .widget{
@@ -34,4 +33,16 @@
     transform: rotate(-28.17deg);
     font-size: 5.25rem;
     color: white;
+}
+
+
+
+.row > .test > .widget{
+    color: $esed-white;
+    background-color: $esed-primary-color;   
+    min-height: 100%;
+}
+
+.row > .non-active > .widget{
+    opacity: 0.5;
 }

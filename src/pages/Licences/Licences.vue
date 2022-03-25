@@ -1,11 +1,12 @@
 <template>
-  <div>
+  <div class="custom-div">
     <h1 class="page-title">
       Licences
     </h1>
-    <b-row>
-      <b-col>
+    <b-row class="custom-div">
+      <b-col class="custom-div">
         <Widget
+          class="custom-div-center"
         >
           <div align="center" class="category">
             <img class="first" src="../../assets/esed/text-file.png" alt="..." />

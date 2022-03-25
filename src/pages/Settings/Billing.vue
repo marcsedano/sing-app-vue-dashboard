@@ -1,74 +1,73 @@
 <template>
-    <div>
-        <Widget
-            title="Billing Information"
-        >
-          <b-row>
-            <b-col class="col-6">
-              <h5> Next invoice: 181.50€ </h5>
-            </b-col>
-            <b-col class="col-6" align="right">
-              <h5> Billing date: 18/03/2022 </h5>
-            </b-col>
-          </b-row>
+  <Widget
+      title="Billing Information"
+      class="custom-div"
+  >
+    <b-row>
+      <b-col class="col-6">
+        <h5> Next invoice: 181.50€ </h5>
+      </b-col>
+      <b-col class="col-6" align="right">
+        <h5> Billing date: 18/03/2022 </h5>
+      </b-col>
+    </b-row>
 
-          <div class="table-resposive">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th class="hidden-sm-down">#</th>
-                  <th>Picture</th>
-                  <th>Description</th>
-                  <th class="hidden-sm-down">Info</th>
-                  <th class="hidden-sm-down">Date</th>
-                  <th class="hidden-sm-down">Size</th>
-                  <th class="hidden-sm-down">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="row in tableStyles" :key="row.id">
-                  <td>{{row.id}}</td>
-                  <td>
-                    <img class="img-rounded" :src="row.picture" alt="" height="50" />
-                  </td>
-                  <td>
-                    {{row.description}}
-                    <div v-if="row.label">
-                      <b-badge :variant="row.label.colorClass">{{row.label.text}}</b-badge>
-                    </div>
-                  </td>
-                  <td>
-                    <p class="mb-0">
-                      <small>
-                        <span class="fw-semi-bold">Type:</span>
-                        <span class="text-muted">&nbsp; {{row.info.type}}</span>
-                      </small>
-                    </p>
-                    <p>
-                      <small>
-                        <span class="fw-semi-bold">Dimensions:</span>
-                        <span class="text-muted">&nbsp; {{row.info.dimensions}}</span>
-                      </small>
-                    </p>
-                  </td>
-                  <td class="text-semi-muted">
-                    {{parseDate(row.date)}}
-                  </td>
-                  <td class="text-semi-muted">
-                    {{row.size}}
-                  </td>
-                  <td class="width-150">
-                    <b-progress
-                      :variant="row.progress.colorClass" :value="row.progress.percent" :max="100"
-                      class="progress-sm mb-xs"
-                    />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </Widget>
+    <div class="table-resposive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="hidden-sm-down">#</th>
+            <th>Picture</th>
+            <th>Description</th>
+            <th class="hidden-sm-down">Info</th>
+            <th class="hidden-sm-down">Date</th>
+            <th class="hidden-sm-down">Size</th>
+            <th class="hidden-sm-down">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="row in tableStyles" :key="row.id">
+            <td>{{row.id}}</td>
+            <td>
+              <img class="img-rounded" :src="row.picture" alt="" height="50" />
+            </td>
+            <td>
+              {{row.description}}
+              <div v-if="row.label">
+                <b-badge :variant="row.label.colorClass">{{row.label.text}}</b-badge>
+              </div>
+            </td>
+            <td>
+              <p class="mb-0">
+                <small>
+                  <span class="fw-semi-bold">Type:</span>
+                  <span class="text-muted">&nbsp; {{row.info.type}}</span>
+                </small>
+              </p>
+              <p>
+                <small>
+                  <span class="fw-semi-bold">Dimensions:</span>
+                  <span class="text-muted">&nbsp; {{row.info.dimensions}}</span>
+                </small>
+              </p>
+            </td>
+            <td class="text-semi-muted">
+              {{parseDate(row.date)}}
+            </td>
+            <td class="text-semi-muted">
+              {{row.size}}
+            </td>
+            <td class="width-150">
+              <b-progress
+                :variant="row.progress.colorClass" :value="row.progress.percent" :max="100"
+                class="progress-sm mb-xs"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+  </Widget>
 </template>
 
 <script>

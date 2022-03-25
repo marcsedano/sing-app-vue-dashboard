@@ -1,10 +1,11 @@
 <template>
-  <div class="dashboard-page">
+  <div class="dashboard-page custom-div">
     <h1 class="page-title">Dashboard</h1>
-    <b-row>
-      <b-col xs="12" lg="6" xl="8">
+    <b-row class="custom-div-row">
+      <b-col class="custom-div" xs="12" lg="6" xl="8">
         <Widget
-          title="<h5>Support <span class='fw-semi-bold'>Requests</span></h5>"
+          title="<h3>Support <span class='fw-semi-bold'>Requests</span></h3>"
+          class="custom-div"
           bodyClass="widget-table-overflow"
           customHeader
         >
@@ -48,14 +49,14 @@
           </div>
         </Widget>
       </b-col>
-      <b-col xs="12" sm="6" md="6" xl="4">
-        <div class="pb-xlg h-auto">
-          <Widget class="h-100 mb-0" title="Revenue Breakdown" close>
+      <b-col class="custom-div" xs="12" sm="6" md="6" xl="4">
+        <div class="custom-div pb-xlg h-auto">
+          <Widget class="custom-div h-100 mb-0" title="Revenue Breakdown" close>
             <highcharts :options="donut"></highcharts>
           </Widget>
         </div>
-        <div class="pb-xlg h-auto">
-          <Widget class="h-100 mb-0" title="Revenue Breakdown" close>
+        <div class="custom-div pb-xlg h-auto">
+          <Widget class="custom-div h-100 mb-0" title="Revenue Breakdown" close>
             <highcharts :options="donut"></highcharts>
           </Widget>
         </div>
@@ -66,7 +67,6 @@
 
 <script>
 import Widget from '@/components/Widget/Widget';
-import BigStat from './components/BigStat/BigStat';
 import mock from './mock';
 
 import { Chart } from 'highcharts-vue';
@@ -74,7 +74,7 @@ import { Chart } from 'highcharts-vue';
 export default {
   name: 'Dashboard',
   components: {
-    Widget, BigStat, highcharts: Chart
+    Widget, highcharts: Chart
   },
   data() {
     return {
