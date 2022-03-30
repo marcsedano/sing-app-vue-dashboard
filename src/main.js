@@ -3,7 +3,6 @@
 import Vue from 'vue';
 import BootstrapVue from 'bootstrap-vue';
 import VueTouch from 'vue-touch';
-import Trend from 'vuetrend';
 import Toasted from 'vue-toasted';
 import VueApexCharts from 'vue-apexcharts';
 
@@ -15,7 +14,6 @@ import Widget from './components/Widget/Widget';
 
 Vue.use(BootstrapVue);
 Vue.use(VueTouch);
-Vue.use(Trend);
 Vue.component('Widget', Widget);
 Vue.component('apexchart', VueApexCharts);
 Vue.mixin(layoutMixin);
