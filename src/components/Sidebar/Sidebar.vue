@@ -6,7 +6,7 @@
         @mouseleave="sidebarMouseLeave"
     >
       <header class="logo mt-2" style="text-align:left;">
-        <router-link to="/app/dashboard"><span class="primary-word"></span><img src="../../assets/esed/white_icon_esed.png" alt="..." style="width:45px"/><span class="secondary-word ml-3"><img src="../../assets/esed/white_logo_esed.png" alt="..." style="width:80px"/></span></router-link>
+        <router-link to="/app/dashboard"><span class="primary-word"></span><img src="../../assets/esed/white_icon_esed.png" alt="..." style="width:45px"/><span class="secondary-word ml-3"><img src="../../assets/esed/white_logo_esed_without_icon.png" alt="..." style="width:80px"/></span></router-link>
       </header>
       <h5 class="navTitle first">
       </h5>
