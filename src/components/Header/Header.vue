@@ -11,37 +11,24 @@
       </b-nav-item>
     </b-nav>
     <a class="navbarBrand d-md-none">
-      <i class="fa fa-circle text-danger" />
-      &nbsp;
-      sing
-      &nbsp;
-      <i class="fa fa-circle text-primary" />
+      <router-link to="/app/dashboard"><img src="../../assets/esed/logo_esed.png" alt="..." style="width:125px"/></router-link>
     </a>
     <b-nav class="ml-auto">
-      <b-nav-item-dropdown
-        class="notificationsMenu d-sm-down-none mr-2"
-        menu-class="notificationsWrapper py-0 animate__animated animate__animated-fast animate__fadeIn"
-        right>
-        <template slot="button-content">
-          <span class="avatar rounded-circle thumb-sm float-left mr-2">
-            <img class="rounded-circle" src="../../assets/people/a7.png" alt="..." />
-          </span>
-          <span class="px-2">Philip Smith</span>
-          <span class="ml-1 mr-2 circle text-white fw-bold avatar-badge">9</span>
-          <i class='fi flaticon-arrow-down px-2' />
-        </template>
-        <Notifications />
-      </b-nav-item-dropdown>
+      <b-nav-item>
+        <span class="avatar rounded-circle thumb-sm float-left mr-2">
+          <img class="rounded-circle" src="../../assets/people/a7.png" alt="..." />
+        </span>
+        <span class="px-2">Philip Smith</span>
+      </b-nav-item>
       <b-nav-item-dropdown id="v-step-2" class="settingsDropdown d-sm-down-none" no-caret right>
         <template slot="button-content">
           <i class='fi flaticon-settings-10 px-2' />
         </template>
-        <b-dropdown-item><i class='fi flaticon-person px-3 mr-3' /> My Account</b-dropdown-item>
-        <b-dropdown-divider />
-        <b-dropdown-item><i class='fi flaticon-calendar-9 px-3 mr-3' />Calendar</b-dropdown-item>
-        <b-dropdown-item><i class='fi flaticon-email px-3 mr-3' />
-          Inbox &nbsp;&nbsp;<b-badge variant="inverse" pill class="animate__animated animate__bounceIn" style="padding: 6px 9px;">9</b-badge>
-        </b-dropdown-item>
+        <router-link to="/app/settings">
+          <b-dropdown-item-button>
+            <i class='fi flaticon-person px-3 mr-3' /> My Account
+          </b-dropdown-item-button>
+        </router-link>
         <b-dropdown-divider />
         <b-dropdown-item-button @click="logout">
           <i class="fi flaticon-power-1 px-3 mr-3" /> Log Out
@@ -53,11 +40,9 @@
 
 <script>
 import { mapState, mapActions } from 'vuex';
-import Notifications from '@/components/Notifications/Notifications';
 
 export default {
   name: 'Header',
-  components: { Notifications },
   computed: {
     ...mapState('layout', ['sidebarClose', 'sidebarStatic']),
   },

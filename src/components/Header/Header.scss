@@ -153,10 +153,21 @@
       outline: none;
     }
     ul {
+      background-color: $esed-primary-color;
       width: 12rem;
       li {
         padding: 4px 0;
       }
+      li > *{
+        color: $esed-white;
+        
+        &:hover {
+          background-color: var(--sidebar-item-hover-bg-color);
+        }
+      }
+    }
+    a {
+      text-decoration: none;
     }
   }
 }
