@@ -2,7 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import Layout from '@/components/Layout/Layout';
-import Login from '@/pages/Login/Login';
+import Login from '@/pages/Login/Login_Copy';
+import Register from '@/pages/Register/Register';
 import ErrorPage from '@/pages/Error/Error';
 
 // Targets
@@ -40,6 +41,11 @@ export default new Router({
       path: '/login',
       name: 'Login',
       component: Login,
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register,
     },
     {
       path: '/error',
